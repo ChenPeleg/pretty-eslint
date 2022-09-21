@@ -1,4 +1,4 @@
-var OFF = 0,
+const OFF = 0,
     WARN = 1,
     ERROR = 2;
 
@@ -20,7 +20,8 @@ module.exports = exports = {
     ],
 
     rules: {
-        // Possible Errors (overrides from recommended set)
+        /** Possible Errors (overrides from recommended set): */
+
         'no-extra-parens': ERROR,
         'no-unexpected-multiline': ERROR,
         // All JSDoc comments must be valid
@@ -36,9 +37,9 @@ module.exports = exports = {
             },
         ],
 
-        // Best Practices
+        /** Best Practices */
 
-        // Allowed a getter without setter, but all setters require getters
+        // Allowed a getter without setter, but all setters require getters:
         'accessor-pairs': [
             ERROR,
             {
@@ -47,24 +48,25 @@ module.exports = exports = {
             },
         ],
         'block-scoped-var': WARN,
-        'consistent-return': ERROR,
-        curly: ERROR,
-        'default-case': WARN,
-        // the dot goes with the property when doing multiline
+        'consistent-return': ERROR, // Require return statements to either always or never specify values
+        curly: ERROR, //Enforce consistent brace style for all control statements, like if, while
+        'default-case': WARN, // inside switch statment
+
+        // the dot goes with the property when doing multiline:
         'dot-location': [WARN, 'property'],
         'dot-notation': WARN,
-        eqeqeq: [ERROR, 'smart'],
-        'guard-for-in': WARN,
+        eqeqeq: [ERROR, 'smart'], //Require the use of === and !==
+        'guard-for-in': WARN, //Require for-in loops to include an if statement (hasOwnProperty)
         'no-alert': ERROR,
         'no-caller': ERROR,
-        'no-case-declarations': WARN,
+        'no-case-declarations': WARN, //Disallow lexical declarations in case clauses (put variable declerations in scoped brackets)
         'no-div-regex': WARN,
-        'no-else-return': WARN,
+        'no-else-return': WARN, // Disallow else blocks after return statements in if statements
         'no-empty-label': WARN,
-        'no-empty-pattern': WARN,
+        'no-empty-pattern': WARN, //Disallow empty destructuring patterns
         'no-eq-null': WARN,
         'no-eval': ERROR,
-        'no-extend-native': ERROR,
+        'no-extend-native': ERROR, //Disallow extending native types )monkey patching)
         'no-extra-bind': WARN,
         'no-floating-decimal': WARN,
         'no-implicit-coercion': [
@@ -78,21 +80,20 @@ module.exports = exports = {
         'no-implied-eval': ERROR,
         'no-invalid-this': ERROR,
         'no-iterator': ERROR,
-        'no-labels': WARN,
+        'no-labels': WARN, //Disallow labeled statements
         'no-lone-blocks': WARN,
         'no-loop-func': ERROR,
         'no-magic-numbers': WARN,
         'no-multi-spaces': ERROR,
         'no-multi-str': WARN,
-        'no-native-reassign': ERROR,
         'no-new-func': ERROR,
-        'no-new-wrappers': ERROR,
-        'no-new': ERROR,
+        'no-new-wrappers': ERROR, // Disallow new operators with the String, Number, and Boolean objects
+        'no-new': ERROR, //Disallow new operators outside of assignments or comparisons
         'no-octal-escape': ERROR,
         'no-param-reassign': ERROR,
         'no-process-env': WARN,
         'no-proto': ERROR,
-        'no-redeclare': ERROR,
+        'no-redeclare': ERROR, //Disallow variable redeclaration
         'no-return-assign': ERROR,
         'no-script-url': ERROR,
         'no-self-compare': ERROR,
@@ -121,11 +122,12 @@ module.exports = exports = {
 
         // Variables
         'init-declarations': [ERROR, 'always'],
-        'no-catch-shadow': WARN,
+
         'no-delete-var': ERROR,
         'no-label-var': ERROR,
         'no-shadow-restricted-names': ERROR,
         'no-shadow': WARN,
+
         // We require all vars to be initialized (see init-declarations)
         // If we NEED a var to be initialized to undefined, it needs to be explicit
         'no-undef-init': OFF,
@@ -135,7 +137,7 @@ module.exports = exports = {
         // Disallow hoisting - let & const don't allow hoisting anyhow
         'no-use-before-define': ERROR,
 
-        // Node.js and CommonJS
+        /** Node.js and CommonJS */
         'callback-return': [WARN, ['callback', 'next']],
         'global-require': ERROR,
         'handle-callback-err': WARN,
