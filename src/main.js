@@ -3,6 +3,7 @@ class mainClass {
         this.data = [{
             a: 2
         }]
-        const a = 2
+        const a = 2      
+        
     }
 }
