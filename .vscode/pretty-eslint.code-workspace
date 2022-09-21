@@ -8,12 +8,10 @@
 		"[javascript]" : {
 			"editor.defaultFormatter": "esbenp.prettier-vscode",
 			"editor.formatOnPaste": true,
-			"editor.formatOnSave": true,
+			"editor.formatOnSave": false,
 			"editor.codeActionsOnSave": {
-				"formatOnSave" : true,
-				"source.fixAll.eslint": true,
-			 
-				"source.organizeImports": true
+			 	 "source.fixAll.eslint": true,
+			 	 "source.organizeImports": true
 			  },
 			   
 		}

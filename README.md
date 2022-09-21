@@ -7,7 +7,7 @@ https://github.com/prettier/eslint-config-prettier
 install:
 
 ```
-npm install --save-dev eslint prettier eslint-plugin-prettier eslint-config-prettier
+npm install --save-dev eslint prettier eslint-plugin-prettier eslint-config-prettier prettier-plugin-jsdoc
 ```
 
 ## Using via Cli

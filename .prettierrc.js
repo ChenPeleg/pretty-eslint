@@ -3,4 +3,5 @@ module.exports = {
     tabWidth: 4, // dafault tab width
     semi: true, //  Add a semicolon at the end of every statement
     singleQuote: true,
+    plugins: ['prettier-plugin-jsdoc'], // to format the js-doc
 };
