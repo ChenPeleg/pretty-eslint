@@ -1,8 +1,10 @@
 class mainClass {
     constructor() {
-        this.data = [{ a: 2 }];
+        var singleQuote
+        this.data = [{ a: 2 },]
+
         const a = 2;
     }
-    /** @type {() => void} */
+    /** @type{(() =>void)} */
     funny() {}
 }
