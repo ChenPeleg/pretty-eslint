@@ -7,12 +7,12 @@
 	"settings": {
 		"[javascript]" : {
 			"editor.defaultFormatter": "esbenp.prettier-vscode",
-			"editor.formatOnPaste": false,
-			"editor.formatOnSave": false,
+			"editor.formatOnPaste": true,
+			"editor.formatOnSave": true,
 			"editor.codeActionsOnSave": {
 				"formatOnSave" : true,
 				"source.fixAll.eslint": true,
-				"esbe": true,
+			 
 				"source.organizeImports": true
 			  },
 			   
