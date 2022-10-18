@@ -1,3 +1,10 @@
+# Prettier and Es-lint
+
+## Motivation
+
+
+
+
 ## Setup prettier and Eslint for Javascript
 
 https://github.com/prettier/eslint-config-prettier

@@ -6,5 +6,5 @@ class mainClass {
         const a = 2;
     }
     /** @type{(() =>void)} */
-    funny() {}
+    funny() { }
 }

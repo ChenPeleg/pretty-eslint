@@ -6,6 +6,6 @@ class mainClass2 {
     anotherMethod() {
         let a;
         let b;
-        const f = a === 2 ? 1:2;
+        const f = a === 2 ? 1 : 2;
     }
 }
