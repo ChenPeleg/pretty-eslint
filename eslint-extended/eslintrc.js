@@ -8,7 +8,7 @@ module.exports = exports = {
     },
 
     ecmaFeatures: {
-        /** dependeing on the project */
+        /** Dependeing on the project */
         modules: true,
     },
 
