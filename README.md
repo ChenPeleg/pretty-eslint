@@ -11,7 +11,7 @@ and more.
 
 ## Setup
 
-Important note: these setups are for projects without initial setup. Projects that were created with CRA or Angular Cli, will usually have some ESLint configuration in them, but not prettier.
+Important note: these setups are for projects without initial setup. Projects that were created with CRA or Angular Cli ect. They will usually have some ESLint configuration in them, but not prettier. In addition, they might need some mode packages installed for framework specific rules like JSX ect. 
 
 ## Setup prettier and Eslint for Javascript
 
@@ -22,7 +22,7 @@ https://github.com/prettier/eslint-config-prettier
 install:
 
 ```
-npm install --save-dev eslint prettier eslint-plugin-prettier eslint-config-prettier prettier-plugin-jsdoc
+npm install --save-dev eslint prettier eslint-plugin-prettier eslint-config-prettier
 ```
 
 ## Using via Cli
@@ -66,6 +66,7 @@ Theses settings will automatically format code by tslint and prettier rules.
 see [this](https://prettier.io/docs/en/webstorm.html) for more details.
 
 Recommended to be in js, to allow comments.
+also recomended to use the [save actions](https://plugins.jetbrains.com/plugin/7642-save-actions) addon, so that the files would be linted and prettified on each save. 
 
 ### Recommended reading
 
