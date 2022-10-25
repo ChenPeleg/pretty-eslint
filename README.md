@@ -1,15 +1,23 @@
-# Prettier and Es-lint
+# Prettier and ESLint
 
 ## Motivation
 
+Biggest reason for adopting Prettier is to stop all the ongoing debates over styles[^whyprettier].
 
+ESLint is a static code analyzer. On some cases they collide. This happens mostly in spacing and line breaks:
 
+comma-spacing, block-spacing, no-multi-spaces, object-curly-newline
+and more.
+
+## Setup
+
+Important note: these setups are for projects without initial setup. Projects that were created with CRA or Angular Cli, will usually have some ESLint configuration in them, but not prettier.
 
 ## Setup prettier and Eslint for Javascript
 
 https://github.com/prettier/eslint-config-prettier
 
-## configuring NodeJs environemnt
+## configuring NodeJs environment
 
 install:
 
@@ -51,10 +59,17 @@ setting default formatter and eslint fixes:
 }
 ```
 
-Theses settings will automatecally format code by tslint and prettier rulls.
+Theses settings will automatically format code by tslint and prettier rules.
 
 ### Webstorm
 
 see [this](https://prettier.io/docs/en/webstorm.html) for more details.
 
-Recomended to be in js, to allow comments.
+Recommended to be in js, to allow comments.
+
+### Recommended reading
+
+[How to use Prettier with ESLint](https://www.robinwieruch.de/prettier-eslint/)
+https://prettier.io/docs/en/integrating-with-linters.html
+
+[^whyprettier] https://prettier.io/docs/en/why-prettier.html
