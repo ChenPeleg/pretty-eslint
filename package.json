@@ -1,7 +1,7 @@
 {
     "scripts": {
         "format": "prettier --write .",
-        "lint-format" : "eslint --fix"
+        "lint-format" : "eslint --fix -o"
     },
     "devDependencies": {
         "eslint": "^8.23.1",
