@@ -1,7 +1,7 @@
 {
     "scripts": {
         "format": "prettier --write .",
-        "lint-format" : "eslint --fix -o"
+        "lint" : "eslint --fix -o './test/output/main.lindet.js'"
     },
     "devDependencies": {
         "eslint": "^8.23.1",

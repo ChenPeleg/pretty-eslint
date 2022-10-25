@@ -8,9 +8,13 @@ ESLint is a static code analyzer. On some cases they collide. This happens mostl
 comma-spacing, block-spacing, no-multi-spaces, object-curly-newline
 and more.
 
+## Solution
+
 So the solution is:
 1. to disable all the ESLint rules that are conflicting with Prettier with  ``eslint-config-prettier`` package.
-2. 
+2. Set the Prettier rules in the ESLint configuration, so every lint also include the prettier rules. 
+
+That way you can run (preferably automatic by the IDE) both of them without confilcting. 
 
 ## Setup
 
